@@ -12,18 +12,7 @@ def start():
     otvet = int(input()) 
     flag = False 
     count = 1 
-    while flag == False: 
-        if otvet == rnd: 
-            print('Отлично! Ты отгадал с', count, 'попытки! Поздравляю!') 
-            flag = True 
-            break 
-        elif otvet > rnd: 
-            print('Слишком много, попробуй меньше') 
-            count += 1 
-        elif otvet < rnd: 
-            print('Слишком мало, попробуй больше') 
-            count += 1 
-        otvet = int(input()) 
+   
 print('Привет! Давай сыграем в игру? Готов начать? Введи "да" или "нет" и нажми Enter') 
 sogl = input() 
 if sogl.lower() == 'нет': 
